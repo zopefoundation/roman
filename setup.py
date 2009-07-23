@@ -11,7 +11,7 @@ setup (
     classifiers = [
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: Python License',
+        'License :: OSI Approved :: Python Software Foundation License',
         'Programming Language :: Python',
         'Natural Language :: English',
         'Operating System :: OS Independent'],
