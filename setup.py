@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup (
     name='roman',
@@ -16,6 +16,8 @@ setup (
         'Natural Language :: English',
         'Operating System :: OS Independent'],
     url = 'http://pypi.python.org/pypi/roman',
+    package_dir={"": "src"},
+    py_modules=["roman"],
     include_package_data = True,
     zip_safe = True,
     )
