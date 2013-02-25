@@ -1,0 +1,16 @@
+=======
+CHANGES
+=======
+
+2.0.0 (unreleased)
+------------------
+
+- Added Python 3.3 and PyPy support.
+
+- Added tests.
+
+
+1.4.0 (2009-07-23)
+------------------
+
+- Initial PyPI release.

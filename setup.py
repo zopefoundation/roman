@@ -2,15 +2,24 @@ from setuptools import setup
 
 setup (
     name='roman',
-    version='1.4.0',
+    version='2.0.0',
     author = "Mark Pilgrim",
     author_email = "f8dy@diveintopython.org",
     description = "Integer to Roman numerals converter",
+    long_description = open('CHANGES.txt').read(),
     license = "Python 2.1.1",
     keywords = "roman",
     classifiers = [
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.6',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: Implementation :: CPython',
+        'Programming Language :: Python :: Implementation :: PyPy',
         'License :: OSI Approved :: Python Software Foundation License',
         'Programming Language :: Python',
         'Natural Language :: English',
@@ -19,5 +28,6 @@ setup (
     package_dir={"": "src"},
     py_modules=["roman"],
     include_package_data = True,
+    test_suite = 'tests',
     zip_safe = True,
     )
