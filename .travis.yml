@@ -1,11 +1,10 @@
-
 language: python
 python:
--py3.3
-    -pypy
-    -py2.6
-    -py2.7
+    - py3.3
+    - py2.7
+    - py2.6
+    - pypy
 install:
-- pip install . --use-mirrors
+    - pip install . --use-mirrors
 script:
-- python setup.py test -q
+    - python setup.py test -q
