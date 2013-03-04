@@ -1,10 +1,12 @@
 language: python
 python:
     - pypy
+    - 3.3
     - 2.7
     - 2.6
-    - 3.3
 install:
     - pip install . --use-mirrors
 script:
     - python setup.py test -q
+notifications:
+    email: false
