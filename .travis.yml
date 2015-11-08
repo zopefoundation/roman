@@ -5,7 +5,7 @@ python:
     - 3.3
     - pypy
 install:
-    - pip install . --use-mirrors
+    - pip install .
 script:
     - python setup.py test -q
 notifications:
