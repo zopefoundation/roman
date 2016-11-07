@@ -5,7 +5,7 @@ CHANGES
 2.0.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Added Python 3.4, 3,5 and PyPy3 support.
 
 
 2.0.0 (2013-02-25)
