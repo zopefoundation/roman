@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='roman',
-    version='3.1',
+    version='3.2.dev0',
     author="Mark Pilgrim",
     author_email="f8dy@diveintopython.org",
     description="Integer to Roman numerals converter",
