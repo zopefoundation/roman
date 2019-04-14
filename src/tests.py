@@ -4,6 +4,7 @@ import roman
 class TestRoman(unittest.TestCase):
 
     def test_toRoman(self):
+        self.assertEqual(roman.toRoman(0), 'N')
         self.assertEqual(roman.toRoman(1), 'I')
         self.assertEqual(roman.toRoman(2013), 'MMXIII')
 
@@ -12,6 +13,7 @@ class TestRoman(unittest.TestCase):
         self.assertRaises(roman.NotIntegerError, roman.toRoman, '1')
 
     def test_fromRoman(self):
+        self.assertEqual(roman.fromRoman('N'), 0)
         self.assertEqual(roman.fromRoman('I'), 1)
         self.assertEqual(roman.fromRoman('MMXIII'), 2013)
 

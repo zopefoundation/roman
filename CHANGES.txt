@@ -5,6 +5,9 @@ CHANGES
 3.2 (unreleased)
 ----------------
 
+- Added support for 0 -> N
+  (see https://en.wikipedia.org/wiki/Roman_numerals#Zero)
+
 - Added support for Python 3.8
 
 

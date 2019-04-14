@@ -41,8 +41,12 @@ def toRoman(n):
     """convert integer to Roman numeral"""
     if not isinstance(n, int):
         raise NotIntegerError("decimals can not be converted")
-    if not (0 < n < 5000):
-        raise OutOfRangeError("number out of range (must be 1..4999)")
+    if not (-1 < n < 5000):
+        raise OutOfRangeError("number out of range (must be 0..4999)")
+
+    # special case
+    if n == 0:
+        return 'N'
 
     result = ""
     for numeral, integer in romanNumeralMap:
@@ -68,6 +72,11 @@ def fromRoman(s):
     """convert Roman numeral to integer"""
     if not s:
         raise InvalidRomanNumeralError('Input can not be blank')
+
+    # special case
+    if s == 'N':
+        return 0
+
     if not romanNumeralPattern.search(s):
         raise InvalidRomanNumeralError('Invalid Roman numeral: %s' % s)
 
