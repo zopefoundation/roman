@@ -1,12 +1,15 @@
 from setuptools import setup
 
+
+desc = ('%s/n/n%s' % (open('README.rst').read(), open('CHANGES.txt').read()))
+
 setup(
     name='roman',
     version='3.2.dev0',
     author="Mark Pilgrim",
     author_email="f8dy@diveintopython.org",
     description="Integer to Roman numerals converter",
-    long_description=open('CHANGES.txt').read(),
+    long_description=desc,
     license="Python 2.1.1",
     keywords="roman",
     classifiers=[
