@@ -7,7 +7,9 @@ benchmark/*.egg-info
 .installed.cfg
 .tox
 bin
+build
 coverage.xml
 develop-eggs
+dist
 docs
 parts
