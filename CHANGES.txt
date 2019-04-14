@@ -1,9 +1,10 @@
-=======
-CHANGES
-=======
+Change log
+==========
 
 3.2 (unreleased)
 ----------------
+
+- expanded test coverage
 
 - Added support for 0 -> N
   (see https://en.wikipedia.org/wiki/Roman_numerals#Zero)
