@@ -3,9 +3,11 @@ __pycache__
 src/*.egg-info
 benchmark/*.egg-info
 
+.coverage*
 .installed.cfg
 .tox
 bin
+coverage.xml
 develop-eggs
 docs
 parts
