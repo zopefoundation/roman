@@ -5,14 +5,19 @@ python:
     - 3.6
     - pypy
     - pypy3
+
 matrix:
     include:
         - python: "3.7"
           dist: xenial
-          sudo: true
+        - python: "3.8-dev"
+          dist: xenial
+
 install:
     - pip install .
+
 script:
     - python setup.py test -q
+
 notifications:
     email: false
