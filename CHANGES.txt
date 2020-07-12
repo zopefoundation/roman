@@ -4,6 +4,8 @@ Change log
 3.3 (unreleased)
 ----------------
 
+- added support for Python 3.9
+
 - added CLI command ``roman`` with ``-r/--reverse`` to convert back from Roman
 
 - added simple usage instructions

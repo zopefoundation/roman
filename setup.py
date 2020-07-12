@@ -5,7 +5,7 @@ desc = ('%s/n/n%s' % (open('README.rst').read(), open('CHANGES.txt').read()))
 
 setup(
     name='roman',
-    version='3.3.dev1',
+    version='3.3.dev0',
     author="Mark Pilgrim",
     author_email="f8dy@diveintopython.org",
     description="Integer to Roman numerals converter",
@@ -23,6 +23,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: Implementation :: CPython',
         'Programming Language :: Python :: Implementation :: PyPy',
         'License :: OSI Approved :: Python Software Foundation License',
