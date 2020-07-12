@@ -2,6 +2,7 @@
 __pycache__
 src/*.egg-info
 benchmark/*.egg-info
+pyvenv.cfg
 
 .coverage*
 .installed.cfg
@@ -9,7 +10,10 @@ benchmark/*.egg-info
 bin
 build
 coverage.xml
+default.profraw
 develop-eggs
 dist
 docs
+lib
+lib64
 parts
