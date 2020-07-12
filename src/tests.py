@@ -2,12 +2,14 @@ import os
 import sys
 import unittest
 
+
 if sys.version_info[0] > 2:
     from io import StringIO
 else:
     from StringIO import StringIO
 
 import roman
+
 
 TEST_MAP = ((0, 'N'), (1, 'I'), (3, 'III'), (4, 'IV'), (9, 'IX'), (14, 'XIV'),
             (19, 'XIX'), (24, 'XXIV'), (40, 'XL'), (49, 'XLIX'), (90, 'XC'),
@@ -18,7 +20,7 @@ TEST_MAP = ((0, 'N'), (1, 'I'), (3, 'III'), (4, 'IV'), (9, 'IX'), (14, 'XIV'),
 if sys.version_info[0] > 2:
     _str = str
 else:
-    _str = unicode
+    _str = unicode  # NOQA: F821
 
 
 class TestRoman(unittest.TestCase):

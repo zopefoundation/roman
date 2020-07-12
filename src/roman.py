@@ -1,4 +1,6 @@
 from __future__ import print_function
+
+
 """Convert to and from Roman numerals"""
 
 __author__ = "Mark Pilgrim (f8dy@diveintopython.org)"
@@ -22,16 +24,20 @@ import sys
 
 
 # Define exceptions
-class RomanError(Exception): pass
+class RomanError(Exception):
+    pass
 
 
-class OutOfRangeError(RomanError): pass
+class OutOfRangeError(RomanError):
+    pass
 
 
-class NotIntegerError(RomanError): pass
+class NotIntegerError(RomanError):
+    pass
 
 
-class InvalidRomanNumeralError(RomanError): pass
+class InvalidRomanNumeralError(RomanError):
+    pass
 
 
 # Define digit mapping
@@ -110,10 +116,11 @@ def parse_args():
         description='convert between roman and arabic numerals'
     )
     parser.add_argument('number', help='the value to convert')
-    parser.add_argument('-r', '--reverse',
-                        action='store_true',
-                        default=False,
-                        help='convert roman to numeral (case insensitive) [default: False]')
+    parser.add_argument(
+        '-r', '--reverse',
+        action='store_true',
+        default=False,
+        help='convert roman to numeral (case insensitive) [default: False]')
 
     args = parser.parse_args()
     args.number = args.number
