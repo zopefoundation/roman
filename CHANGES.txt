@@ -4,6 +4,10 @@ Change log
 3.3 (unreleased)
 ----------------
 
+- added CLI command ``roman`` with ``-r/--reverse`` to convert back from Roman
+
+- added simple usage instructions
+
 
 3.2 (2019-04-14)
 ----------------
