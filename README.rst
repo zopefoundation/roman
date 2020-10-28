@@ -1,5 +1,5 @@
-.. image:: https://travis-ci.org/zopefoundation/roman.svg?branch=master
-    :target: https://travis-ci.org/zopefoundation/roman
+.. image:: https://travis-ci.com/zopefoundation/roman.svg?branch=master
+    :target: https://travis-ci.com/zopefoundation/roman
 
 .. image:: https://coveralls.io/repos/github/zopefoundation/roman/badge.svg?branch=master
     :target: https://coveralls.io/github/zopefoundation/roman?branch=master
