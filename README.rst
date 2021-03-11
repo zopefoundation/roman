@@ -40,7 +40,7 @@ There are two ways to use this library.
 
     ~$ roman 972
     CMLXXII
-    # use the -r/--reverse to conver Roman numerals
+    # use the -r/--reverse to convert Roman numerals
     ~$ roman -r CMLXXII
     972
     # case insensitive
