@@ -18,7 +18,6 @@ http://www.python.org/2.1.1/license.html
 """
 
 import argparse
-import os
 import re
 import sys
 
@@ -138,7 +137,7 @@ def main():
         n = toRoman(i)
         print(n)
 
-    return os.EX_OK
+    return 0
 
 
 if __name__ == "__main__":
