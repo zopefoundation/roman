@@ -5,7 +5,7 @@ desc = ('%s\n\n%s' % (open('README.rst').read(), open('CHANGES.txt').read()))
 
 setup(
     name='roman',
-    version='3.4.dev0',
+    version='4.0.dev0',
     author="Mark Pilgrim",
     author_email="f8dy@diveintopython.org",
     description="Integer to Roman numerals converter",
