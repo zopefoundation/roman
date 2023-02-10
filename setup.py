@@ -1,13 +1,14 @@
 from setuptools import setup
 
 
-desc = ('%s\n\n%s' % (open('README.rst').read(), open('CHANGES.txt').read()))
+desc = ('{}\n\n{}'.format(open('README.rst').read(),
+                          open('CHANGES.txt').read()))
 
 setup(
     name='roman',
     version='4.0.dev0',
     author="Mark Pilgrim",
-    author_email="f8dy@diveintopython.org",
+    author_email="zope-dev@zope.dev",
     description="Integer to Roman numerals converter",
     long_description=desc,
     long_description_content_type='text/x-rst',

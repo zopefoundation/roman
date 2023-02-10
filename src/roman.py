@@ -1,6 +1,3 @@
-from __future__ import print_function
-
-
 """Convert to and from Roman numerals"""
 
 __author__ = "Mark Pilgrim (f8dy@diveintopython.org)"
