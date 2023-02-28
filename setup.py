@@ -6,7 +6,7 @@ desc = ('{}\n\n{}'.format(open('README.rst').read(),
 
 setup(
     name='roman',
-    version='4.0.dev0',
+    version='4.0',
     author="Mark Pilgrim",
     author_email="zope-dev@zope.dev",
     description="Integer to Roman numerals converter",
