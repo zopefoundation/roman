@@ -1,12 +1,7 @@
 import os
 import sys
 import unittest
-
-
-if sys.version_info[0] > 2:
-    from io import StringIO
-else:
-    from StringIO import StringIO
+from io import StringIO
 
 import roman
 
@@ -17,18 +12,13 @@ TEST_MAP = ((0, 'N'), (1, 'I'), (3, 'III'), (4, 'IV'), (9, 'IX'), (14, 'XIV'),
             (900, 'CM'), (990, 'CMXC'), (998, 'CMXCVIII'), (999, 'CMXCIX'),
             (2013, 'MMXIII'))
 
-if sys.version_info[0] > 2:
-    _str = str
-else:
-    _str = unicode  # NOQA: F821
-
 
 class TestRoman(unittest.TestCase):
 
     def test_toRoman(self):
         for num_arabic, num_roman in TEST_MAP:
             self.assertEqual(roman.toRoman(num_arabic), num_roman,
-                             '%s should be %s' % (num_arabic, num_roman))
+                             '{} should be {}'.format(num_arabic, num_roman))
 
     def test_toRoman_errors(self):
         self.assertRaises(roman.OutOfRangeError, roman.toRoman, 100000)
@@ -37,7 +27,7 @@ class TestRoman(unittest.TestCase):
     def test_fromRoman(self):
         for num_arabic, num_roman in TEST_MAP:
             self.assertEqual(roman.fromRoman(num_roman), num_arabic,
-                             '%s should be %s' % (num_roman, num_arabic))
+                             '{} should be {}'.format(num_roman, num_arabic))
 
     def test_fromRoman_errors(self):
         self.assertRaises(
@@ -53,7 +43,7 @@ class TestRoman(unittest.TestCase):
 
     def test_main_toRoman(self):
         for num_arabic, num_roman in TEST_MAP:
-            sys.argv = ['roman', _str(num_arabic)]
+            sys.argv = ['roman', str(num_arabic)]
             sys.stdout = StringIO()
             ex_st = roman.main()
             output = sys.stdout.getvalue().strip()
@@ -66,7 +56,7 @@ class TestRoman(unittest.TestCase):
             sys.stdout = StringIO()
             ex_st = roman.main()
             output = sys.stdout.getvalue().strip()
-            self.assertEqual(output, _str(num_arabic))
+            self.assertEqual(output, str(num_arabic))
             self.assertEqual(ex_st, os.EX_OK)
 
     def test_main_fromRoman_caseInsensitive(self):
@@ -75,9 +65,9 @@ class TestRoman(unittest.TestCase):
             sys.stdout = StringIO()
             ex_st = roman.main()
             output = sys.stdout.getvalue().strip()
-            self.assertEqual(output, _str(num_arabic))
+            self.assertEqual(output, str(num_arabic))
             self.assertEqual(ex_st, os.EX_OK)
 
 
 def test_suite():
-    return unittest.makeSuite(TestRoman)
+    return unittest.defaultTestLoader.loadTestsFromTestCase(TestRoman)

@@ -1,0 +1,21 @@
+# Generated from:
+# https://github.com/zopefoundation/meta/tree/master/config/pure-python
+[meta]
+template = "pure-python"
+commit-id = "f6bd0f55"
+
+[python]
+with-sphinx-doctests = false
+with-future-python = false
+with-pypy = true
+with-macos = false
+with-windows = false
+
+[tox]
+use-flake8 = true
+testenv-deps = [
+    "zope.testrunner",
+    ]
+
+[coverage]
+fail-under = 100

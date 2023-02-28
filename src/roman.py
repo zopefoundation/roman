@@ -1,6 +1,3 @@
-from __future__ import print_function
-
-
 """Convert to and from Roman numerals"""
 
 __author__ = "Mark Pilgrim (f8dy@diveintopython.org)"
@@ -140,5 +137,5 @@ def main():
     return 0
 
 
-if __name__ == "__main__":
-    sys.exit(main())
+if __name__ == "__main__":  # pragma: no cover
+    sys.exit(main())  # pragma: no cover
