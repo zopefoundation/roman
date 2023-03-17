@@ -105,37 +105,34 @@ def fromRoman(s):
             index += len(numeral)
     return result
 
-def is_roman_numeral(s:str) -> bool:
+
+def is_roman_numeral(s:str) -> bool: 
     """
     This function can be used to check if a string is a valid roman numeral.
-    it uses the buitlin function fromRoman checking if it raises an error or not.
-    
+    it uses the buitlin function `fromRoman` checking if it raises an error.
     ## Parameters
     s: `str`
         The string to check if it is a valid roman numeral.
-    
     ## Returns
     `bool`
         True if the string is a valid roman numeral, False otherwise.
-    
     ## Usage
     >>> is_roman_numeral('I')
     >>> True
-    
     >>> is_roman_numeral('IIVNPO')
     >>> False
-    
     ## Raises
     `TypeError`
         If the input is not a string.
     """
-    if not(isinstance(s, str)):
+    if not (isinstance(s, str)):
         raise TypeError("Input must be a string")
     try:
         fromRoman(s)
         return True
     except InvalidRomanNumeralError:
         return False
+
 
 def parse_args():
     parser = argparse.ArgumentParser(
