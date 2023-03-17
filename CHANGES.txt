@@ -4,7 +4,7 @@ Change log
 4.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Added `is_roman_numeral` function: to check if a str entry is a valid roman numeral or not
 
 
 4.0 (2023-02-28)
