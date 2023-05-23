@@ -2,7 +2,7 @@ from setuptools import setup
 
 
 desc = ('{}\n\n{}'.format(open('README.rst').read(),
-                          open('CHANGES.txt').read()))
+                          open('CHANGES.rst').read()))
 
 setup(
     name='roman',
@@ -12,7 +12,7 @@ setup(
     description="Integer to Roman numerals converter",
     long_description=desc,
     long_description_content_type='text/x-rst',
-    license="Python 2.1.1",
+    license="PSF-2.0",
     keywords="roman",
     classifiers=[
         'Development Status :: 5 - Production/Stable',
