@@ -4,7 +4,7 @@ Change log
 4.1 (unreleased)
 ----------------
 
-- Declare license as ``ZPL-2.1`` to be compliant to the SPDX standard.
+- Change license to the Zope Public License (ZPL) version 2.1
   (`#15 <https://github.com/zopefoundation/roman/issues/15>`_)
 
 
