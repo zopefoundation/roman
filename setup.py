@@ -1,3 +1,17 @@
+##############################################################################
+#
+# Copyright (c) 2001 Mark Pilgrim and Contributors.
+# All Rights Reserved.
+#
+# This software is subject to the provisions of the Zope Public License,
+# Version 2.1 (ZPL).  A copy of the ZPL should accompany this distribution.
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY AND ALL EXPRESS OR IMPLIED
+# WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND FITNESS
+# FOR A PARTICULAR PURPOSE.
+#
+##############################################################################
+
 from setuptools import setup
 
 
@@ -8,11 +22,12 @@ setup(
     name='roman',
     version='4.1.dev0',
     author="Mark Pilgrim",
-    author_email="zope-dev@zope.dev",
+    maintainer="Zope Foundation and Contributors",
+    maintainer_email="zope-dev@zope.dev",
     description="Integer to Roman numerals converter",
     long_description=desc,
     long_description_content_type='text/x-rst',
-    license="PSF-2.0",
+    license="ZPL-2.1",
     keywords="roman",
     classifiers=[
         'Development Status :: 5 - Production/Stable',

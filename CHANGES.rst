@@ -4,7 +4,7 @@ Change log
 4.1 (unreleased)
 ----------------
 
-- Declare license as ``PSF-2.0`` to be compliant to the SPDX standard.
+- Declare license as ``ZPL-2.1`` to be compliant to the SPDX standard.
   (`#15 <https://github.com/zopefoundation/roman/issues/15>`_)
 
 
