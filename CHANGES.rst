@@ -1,7 +1,7 @@
 Change log
 ==========
 
-4.1 (unreleased)
+4.1 (2023-05-26)
 ----------------
 
 - Change license to the Zope Public License (ZPL) version 2.1
