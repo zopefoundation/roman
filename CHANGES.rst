@@ -4,7 +4,8 @@ Change log
 4.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Change license to the Zope Public License (ZPL) version 2.1
+  (`#15 <https://github.com/zopefoundation/roman/issues/15>`_)
 
 
 4.0 (2023-02-28)
