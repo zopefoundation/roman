@@ -1,7 +1,7 @@
 Change log
 ==========
 
-4.2 (unreleased)
+4.2 (2024-04-25)
 ----------------
 
 - Remove overlooked mentions of the Python 2.1.1 license
