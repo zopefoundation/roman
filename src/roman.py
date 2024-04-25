@@ -21,10 +21,6 @@ __copyright__ = """Copyright (c) 2001 Mark Pilgrim
 This program is part of "Dive Into Python", a free Python tutorial for
 experienced programmers.  Visit http://diveintopython.org/ for the
 latest version.
-
-This program is free software; you can redistribute it and/or modify
-it under the terms of the Python 2.1.1 license, available at
-http://www.python.org/2.1.1/license.html
 """
 
 import argparse

@@ -4,6 +4,9 @@ Change log
 4.2 (unreleased)
 ----------------
 
+- Remove overlooked mentions of the Python 2.1.1 license
+  (`#17 <https://github.com/zopefoundation/roman/issues/17>`_)
+
 - Add support for Python 3.12 and 3.13.
 
 
