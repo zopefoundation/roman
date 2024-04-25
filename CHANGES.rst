@@ -4,6 +4,8 @@ Change log
 4.2 (unreleased)
 ----------------
 
+- Add support for Python 3.12 and 3.13.
+
 
 4.1 (2023-05-26)
 ----------------
