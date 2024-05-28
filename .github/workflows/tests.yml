@@ -17,7 +17,7 @@ jobs:
       fail-fast: false
       matrix:
         os:
-        - ["ubuntu", "ubuntu-20.04"]
+        - ["ubuntu", "ubuntu-latest"]
         config:
         # [Python version, tox env]
         - ["3.9",   "release-check"]
@@ -28,7 +28,7 @@ jobs:
         - ["3.10",  "py310"]
         - ["3.11",  "py311"]
         - ["3.12",  "py312"]
-        - ["3.13.0-alpha - 3.13.0",  "py313"]
+        - ["3.13",  "py313"]
         - ["pypy-3.10", "pypy3"]
         - ["3.9",   "coverage"]
 
@@ -41,6 +41,7 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: ${{ matrix.config[0] }}
+        allow-prereleases: true
     - name: Pip cache
       uses: actions/cache@v4
       with:
