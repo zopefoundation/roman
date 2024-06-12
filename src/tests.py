@@ -31,7 +31,7 @@ class TestRoman(unittest.TestCase):
     def test_toRoman(self):
         for num_arabic, num_roman in TEST_MAP:
             self.assertEqual(roman.toRoman(num_arabic), num_roman,
-                             '{} should be {}'.format(num_arabic, num_roman))
+                             f'{num_arabic} should be {num_roman}')
 
     def test_toRoman_errors(self):
         self.assertRaises(roman.OutOfRangeError, roman.toRoman, 100000)
@@ -40,7 +40,7 @@ class TestRoman(unittest.TestCase):
     def test_fromRoman(self):
         for num_arabic, num_roman in TEST_MAP:
             self.assertEqual(roman.fromRoman(num_roman), num_arabic,
-                             '{} should be {}'.format(num_roman, num_arabic))
+                             f'{num_roman} should be {num_arabic}')
 
     def test_fromRoman_errors(self):
         self.assertRaises(
