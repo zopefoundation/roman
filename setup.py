@@ -52,7 +52,6 @@ setup(
     python_requires='>=3.8',
     py_modules=["roman"],
     include_package_data=True,
-    test_suite='tests',
     zip_safe=True,
     entry_points={
         'console_scripts': [
