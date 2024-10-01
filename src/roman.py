@@ -96,8 +96,11 @@ romanNumeralPattern = re.compile("""
 
 def fromRoman(s):
     """convert Roman numeral to integer"""
+
     if not s:
         raise InvalidRomanNumeralError('Input cannot be blank')
+
+    s = s.upper()  # Handle lowercase inputs
 
     # special case
     if s == 'N':
