@@ -6,6 +6,9 @@ Change log
 
 - Drop support for Python 3.7.
 
+- Add support for lower case roman numerals.
+  (`#22 <https://github.com/zopefoundation/roman/pull/22>`_)
+
 
 4.2 (2024-04-25)
 ----------------
