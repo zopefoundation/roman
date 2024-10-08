@@ -136,8 +136,7 @@ def parse_args():
 def main():
     args = parse_args()
     if args.reverse:
-        u = args.number.upper()
-        r = fromRoman(u)
+        r = fromRoman(args.number)
         print(r)
     else:
         i = int(args.number)
