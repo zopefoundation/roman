@@ -4,6 +4,8 @@ Change log
 5.0 (unreleased)
 ----------------
 
+- Drop support for Python 3.8.
+
 - Drop support for Python 3.7.
 
 - Add support for lower case roman numerals.
