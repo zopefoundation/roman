@@ -4,9 +4,7 @@ Change log
 5.0 (unreleased)
 ----------------
 
-- Drop support for Python 3.8.
-
-- Drop support for Python 3.7.
+- Drop support for Python 3.7, 3.8.
 
 - Add support for lower case roman numerals.
   (`#22 <https://github.com/zopefoundation/roman/pull/22>`_)
