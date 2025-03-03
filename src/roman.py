@@ -82,12 +82,12 @@ def toRoman(n):
 romanNumeralPattern = re.compile("""
     ^                   # beginning of string
     M{0,4}              # thousands - 0 to 4 M's
-    (CM|CD|D?C{0,4})    # hundreds - 900 (CM), 400 (CD), 0-300 (0 to 3 C's),
-                        #            or 500-800 (D, followed by 0 to 3 C's)
-    (XC|XL|L?X{0,4})    # tens - 90 (XC), 40 (XL), 0-30 (0 to 3 X's),
-                        #        or 50-80 (L, followed by 0 to 3 X's)
-    (IX|IV|V?I{0,4})    # ones - 9 (IX), 4 (IV), 0-3 (0 to 3 I's),
-                        #        or 5-8 (V, followed by 0 to 3 I's)
+    (CM|CD|D?C{0,4})    # hundreds - 900 (CM), 400 (CD), 0-400 (0 to 4 C's),
+                        #            or 500-900 (D, followed by 0 to 4 C's)
+    (XC|XL|L?X{0,4})    # tens - 90 (XC), 40 (XL), 0-40 (0 to 4 X's),
+                        #        or 50-90 (L, followed by 0 to 4 X's)
+    (IX|IV|V?I{0,4})    # ones - 9 (IX), 4 (IV), 0-4 (0 to 4 I's),
+                        #        or 5-9 (V, followed by 0 to 4 I's)
     $                   # end of string
     """, re.VERBOSE)
 
