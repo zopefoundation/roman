@@ -98,7 +98,8 @@ def fromRoman(s: str, special_case: bool = True):
 
     Parameters:
         s (str): The Roman numeral string to convert.
-        special_case (bool, optional): If True (default), interprets 'N' as 0 for the special case of zero.
+        special_case (bool, optional): If True (default), 
+            interprets 'N' as 0 for the special case of zero.
 
     Returns:
         int: The integer value of the Roman numeral.
