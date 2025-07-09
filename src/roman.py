@@ -114,7 +114,7 @@ def fromRoman(s: str, special_case: bool = True):
     s = s.upper()  # Handle lowercase inputs
 
     # special case
-    if special_case and s == 'N':
+    if s == 'N' and special_case:
         return 0
 
     if not romanNumeralPattern.search(s):
