@@ -92,8 +92,21 @@ romanNumeralPattern = re.compile("""
     """, re.VERBOSE)
 
 
-def fromRoman(s):
-    """convert Roman numeral to integer"""
+def fromRoman(s: str, special_case: bool = True):
+    """
+    Convert Roman numeral to integer.
+
+    Parameters:
+        s (str): The Roman numeral string to convert.
+        special_case (bool, optional): If True (default),
+            interprets 'N' as 0 for the special case of zero.
+
+    Returns:
+        int: The integer value of the Roman numeral.
+
+    Raises:
+        InvalidRomanNumeralError: If the input is not a valid Roman numeral.
+    """
 
     if not s:
         raise InvalidRomanNumeralError('Input cannot be blank')
@@ -101,7 +114,7 @@ def fromRoman(s):
     s = s.upper()  # Handle lowercase inputs
 
     # special case
-    if s == 'N':
+    if s == 'N' and special_case:
         return 0
 
     if not romanNumeralPattern.search(s):

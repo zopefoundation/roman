@@ -47,6 +47,11 @@ class TestRoman(unittest.TestCase):
             roman.InvalidRomanNumeralError, roman.fromRoman, '')
         self.assertRaises(
             roman.InvalidRomanNumeralError, roman.fromRoman, 'Q12')
+        self.assertRaises(
+            roman.InvalidRomanNumeralError,
+            roman.fromRoman,
+            'n',
+            special_case=False)
 
     def test_parse_args(self):
         sys.argv = ['roman', '10']
