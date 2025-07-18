@@ -1,7 +1,7 @@
 Change log
 ==========
 
-5.1 (unreleased)
+5.1 (2025-07-18)
 ----------------
 
 - Hide undocumented special behavior for ``N`` behind method parameter.
