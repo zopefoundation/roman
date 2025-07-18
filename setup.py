@@ -27,7 +27,7 @@ setup(
     description="Integer to Roman numerals converter",
     long_description=desc,
     long_description_content_type='text/x-rst',
-    license="ZPL 2.1",
+    license="ZPL-2.1",
     keywords="roman",
     classifiers=[
         'Development Status :: 5 - Production/Stable',
