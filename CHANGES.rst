@@ -4,7 +4,8 @@ Change log
 5.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Hide undocumented special behavior for ``N`` behind method parameter.
+  (`#30 <https://github.com/zopefoundation/roman/issues/30>`_)
 
 
 5.0 (2025-01-15)
