@@ -59,7 +59,7 @@ romanNumeralMap = (('M', 1000),
                    ('I', 1))
 
 
-def toRoman(n):
+def toRoman(n: int) -> str:
     """convert integer to Roman numeral"""
     if not isinstance(n, int):
         raise NotIntegerError("decimals cannot be converted")
@@ -92,7 +92,7 @@ romanNumeralPattern = re.compile("""
     """, re.VERBOSE)
 
 
-def fromRoman(s: str, special_case: bool = True):
+def fromRoman(s: str, special_case: bool = True) -> int:
     """
     Convert Roman numeral to integer.
 
@@ -129,7 +129,7 @@ def fromRoman(s: str, special_case: bool = True):
     return result
 
 
-def parse_args():
+def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         prog='roman',
         description='convert between roman and arabic numerals'
@@ -146,7 +146,7 @@ def parse_args():
     return args
 
 
-def main():
+def main() -> int:
     args = parse_args()
     if args.reverse:
         r = fromRoman(args.number)

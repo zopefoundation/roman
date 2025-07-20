@@ -49,7 +49,8 @@ setup(
     url='https://github.com/zopefoundation/roman',
     package_dir={"": "src"},
     python_requires='>=3.9',
-    py_modules=["roman"],
+    packages=["roman"],
+    package_data={"roman": ["py.typed"]},
     include_package_data=True,
     zip_safe=True,
     entry_points={

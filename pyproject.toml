@@ -31,3 +31,24 @@ exclude_lines = [
 
 [tool.coverage.html]
 directory = "parts/htmlcov"
+
+[tool.mypy]
+files = "src/roman"
+strict = true
+strict_bytes = true
+local_partial_types = true
+python_version = "3.9"
+ignore_missing_imports = true
+install_types = true
+non_interactive = true
+
+disallow_untyped_defs = true
+no_implicit_optional = true
+check_untyped_defs = true
+warn_return_any = true
+show_error_codes = true
+warn_unused_ignores = true
+
+disallow_incomplete_defs = true
+disallow_untyped_decorators = true
+disallow_any_unimported = false
