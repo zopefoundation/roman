@@ -5,6 +5,8 @@ Change log
 ----------------
 
 
+- Add support for Python 3.14.
+
 - Drop support for Python 3.9.
 
 5.1 (2025-07-18)
