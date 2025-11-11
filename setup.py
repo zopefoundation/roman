@@ -20,7 +20,7 @@ desc = ('{}\n\n{}'.format(open('README.rst').read(),
 
 setup(
     name='roman',
-    version='5.2.dev0',
+    version='5.2',
     author="Mark Pilgrim",
     maintainer="Zope Foundation and Contributors",
     maintainer_email="zope-dev@zope.dev",
