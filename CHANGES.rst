@@ -4,7 +4,7 @@ Change log
 5.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Drop support for Python 3.15.
 
 
 5.2 (2025-11-11)
