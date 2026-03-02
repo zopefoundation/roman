@@ -1,13 +1,50 @@
-# 
-# Generated from:
-# https://github.com/zopefoundation/meta/tree/master/config/pure-python
-
+# Generated with zope.meta (https://zopemeta.readthedocs.io/) from:
+# https://github.com/zopefoundation/meta/tree/master/src/zope/meta/pure-python
 [build-system]
 requires = [
     "setuptools >= 78.1.1,< 81",
     "wheel",
 ]
 build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "roman"
+version = "5.3.dev0"
+description = "Integer to Roman numerals converter"
+license = "ZPL-2.1"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+]
+dynamic = ["readme"]
+requires-python = ">=3.10"
+authors = [
+    {name = "Mark Pilgrim"},
+]
+maintainers = [
+    {name = "Plone Foundation and contributors",email = "zope-dev@zope.dev"},
+]
+keywords = ["roman"]
+
+[project.scripts]
+roman = "roman:main"
+
+[project.urls]
+Source = "https://github.com/zopefoundation/roman"
+Issues = "https://github.com/zopefoundation/roman/issues"
+Changelog = "https://raw.githubusercontent.com/zopefoundation/roman/master/CHANGES.rst"
 
 [tool.coverage.run]
 branch = true
@@ -31,3 +68,7 @@ exclude_lines = [
 
 [tool.coverage.html]
 directory = "parts/htmlcov"
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.rst", "CHANGES.rst"]}
+

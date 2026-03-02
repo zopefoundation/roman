@@ -1,5 +1,5 @@
-# Generated from:
-# https://github.com/zopefoundation/meta/tree/master/config/pure-python
+# Generated with zope.meta (https://zopemeta.readthedocs.io/) from:
+# https://github.com/zopefoundation/meta/tree/master/src/zope/meta/pure-python
 minimum_pre_commit_version: '3.6'
 repos:
   - repo: https://github.com/pycqa/isort
@@ -12,7 +12,7 @@ repos:
     - id: autopep8
       args: [--in-place, --aggressive, --aggressive]
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.21.0
+    rev: v3.21.2
     hooks:
     - id: pyupgrade
       args: [--py310-plus]

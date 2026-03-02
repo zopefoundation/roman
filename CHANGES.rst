@@ -4,7 +4,7 @@ Change log
 5.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Move package metadata from setup.py to pyproject.toml.
 
 
 5.2 (2025-11-11)
