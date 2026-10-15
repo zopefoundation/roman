@@ -46,4 +46,3 @@ There are two ways to use this library.
     # case insensitive
     ~$ roman -r cMlxxii
     972
-
