@@ -4,6 +4,8 @@ Change log
 5.3 (unreleased)
 ----------------
 
+- Drop support for Python 3.10.
+
 - Move package metadata from setup.py to pyproject.toml.
 
 
